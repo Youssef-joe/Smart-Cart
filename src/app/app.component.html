@@ -1,0 +1,71 @@
+<!-- <ng-container *ngIf="showSidebar">
+    <app-sidebar>
+      <app-header headHeader></app-header>
+      <router-outlet></router-outlet>
+      <ng-container *ngIf="showHome">
+        <app-home header></app-home>  
+      </ng-container>
+      <app-footer footer></app-footer>
+    </app-sidebar>
+  </ng-container>
+  
+  <ng-container *ngIf="!showSidebar">
+    <app-header headHeader></app-header>
+    <router-outlet></router-outlet>
+    <app-footer footer></app-footer>
+  </ng-container> -->
+<!--   
+  <div>
+    
+    <app-sidebar>
+        <app-header headHeader></app-header>
+        <router-outlet></router-outlet>
+        
+        <app-home header></app-home>
+        <app-footer footer></app-footer>
+      </app-sidebar>
+  </div>
+
+   -->
+ 
+
+<!-- Sidebar and Home components are shown together if showSidebar is true -->
+<ng-container *ngIf="showSidebar">
+    
+    <app-sidebar>
+        <app-header headHeader></app-header>
+        <router-outlet></router-outlet>
+        
+        <app-home header></app-home>
+        <app-footer footer></app-footer>
+      </app-sidebar>
+  </ng-container>
+  
+  <!-- Only show header, login component, and footer if showLogin is true -->
+  <ng-container *ngIf="showLogin">
+    <app-header headHeader></app-header>
+    <app-register></app-register>
+    <app-footer footer></app-footer>
+  </ng-container>
+
+<!-- Only Show Header, Login component, and footer if showAbout is true -->
+  <ng-container *ngIf="showAbout">
+    <app-header headHeader></app-header>
+    <app-about></app-about>
+    <app-footer footer></app-footer>
+  </ng-container>
+
+
+<!-- Only Show Header, Login component, and footer if showCoontact is true -->
+  <ng-container *ngIf="showContact">
+    <app-header headHeader></app-header>
+    <app-contact></app-contact>
+    <app-footer footer></app-footer>
+  </ng-container>
+
+
+
+  
+
+  
+  

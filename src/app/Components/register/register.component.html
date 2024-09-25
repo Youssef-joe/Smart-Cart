@@ -1,0 +1,38 @@
+<div class="container">
+  <form class="example-form" (ngSubmit)="register()">
+    
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput [(ngModel)]="name" name="name" required />
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput [(ngModel)]="lastname" name="lastName" required />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>E-mail</mat-label>
+        <input matInput placeholder="name@email.com" type="email" id="email" [(ngModel)]="email" name="email" required />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput id="password" [(ngModel)]="password" name="password" required />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" matInput [(ngModel)]="confirmPassword" name="confirmPassword" required />
+      </mat-form-field>
+    </p>
+
+    <button class="subBtn" type="submit">Submit</button>
+  </form>
+</div>

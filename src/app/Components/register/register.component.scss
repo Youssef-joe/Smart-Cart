@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 25px;
+    
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(181, 179, 179);
+    background-color: rgb(149, 145, 145);
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .subBtn {
+    padding: 10px;
+    font-size: 18px;
+    width: 140px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+
+
+  }
+
+  .subBtn:hover {
+    background-color: rgb(94, 92, 92);
+    cursor: pointer;
+    color: white;
+  }
+

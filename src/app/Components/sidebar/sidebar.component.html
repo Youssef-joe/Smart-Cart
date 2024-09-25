@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container" autosize>
+  <ng-content select="[headHeader]"></ng-content>
+
+  <ng-content select="[header]"></ng-content>
+  
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p class="seeMore">Welcome</p>
+    @if (showFiller) {
+      <p></p>
+    }
+    <button (click)="showFiller = !showFiller" mat-raised-button class="clickBtn">
+      see your Email
+    </button>
+  </mat-drawer>
+  
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()" class="toggleBtn">
+      Toggle sidenav
+    </button>
+  </div>
+  
+  
+  <ng-content select="[footer]"></ng-content>
+
+  </mat-drawer-container>

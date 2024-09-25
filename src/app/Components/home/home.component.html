@@ -1,0 +1,59 @@
+<section class="homeContainer">
+  
+
+  
+    <div class="subContainer">
+
+      <!-- Hello Component -->
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+      <div class="content">
+        <div class="content__container">
+          <p class="content__container__text">
+            Hello
+          </p>
+          
+          <ul class="content__container__list">
+            <li class="content__container__list__item">users !</li>
+            <li class="content__container__list__item">customers !</li>
+            <!-- <li class="content__container__list__item">users !</li>
+            <li class="content__container__list__item">everybody !</li> -->
+          </ul>
+        </div>
+      </div>
+      <!-- Hello Component -->
+
+      
+
+        <button class="visibleBtn" (click)="visible()">Show Cards</button>
+    </div>
+  
+
+
+  
+</section>
+
+
+
+
+<section class="container" [class.visible]="isVisible">
+  <mat-card class="example-card" appearance="outlined" *ngFor="let prod of prodList">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <!-- the question mark in the line below refers to :safe navigation operator: -->
+      <mat-card-title>{{prod?.title}}</mat-card-title> 
+      <mat-card-subtitle>{{prod.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p class="paragraph">
+        {{prod.content}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="likeBtn">LIKE</button>
+      <button mat-button class="shareBtn">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  
+</section>

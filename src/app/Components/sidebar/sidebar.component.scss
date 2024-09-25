@@ -1,0 +1,55 @@
+// Start sideNavToggle styling
+.example-container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .toggleBtn {
+    border: 1px solid black;
+    padding: 10px;
+    position: fixed; /* Fixes the button to the viewport */
+    bottom: 20px;       /* Adjust as needed */
+    right: 20px;     /* Adjust as needed */
+    background-color: #ffffff; /* Example background color */
+    border: none;    /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    cursor: pointer;  /* Pointer cursor on hover */
+    z-index: 0;    /* Ensure the button is above other content */
+  
+
+  }
+  
+.toggleBtn:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+
+.clickBtn {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+.clickBtn:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+// End sideNavToggle styling
