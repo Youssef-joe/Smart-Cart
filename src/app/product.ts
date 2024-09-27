@@ -3,5 +3,6 @@ export interface Product {
     title:string,
     name: string,
     image: string,
-    content: string
+    content: string,
+    src: string
 }

@@ -1,7 +1,4 @@
 <section class="homeContainer">
-  
-
-  
     <div class="subContainer">
 
       <!-- Hello Component -->
@@ -21,21 +18,10 @@
           </ul>
         </div>
       </div>
-      <!-- Hello Component -->
-
-      
-
-        <button class="visibleBtn" (click)="visible()">Show Cards</button>
+      <!-- Hello Component -->    
     </div>
-  
-
-
-  
+ 
 </section>
-
-
-
-
 <section class="container" [class.visible]="isVisible">
   <mat-card class="example-card" appearance="outlined" *ngFor="let prod of prodList">
     <mat-card-header>
@@ -44,7 +30,7 @@
       <mat-card-title>{{prod?.title}}</mat-card-title> 
       <mat-card-subtitle>{{prod.name}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="prod.src" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p class="paragraph">
         {{prod.content}}

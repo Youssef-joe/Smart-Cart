@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <form class="example-form" (ngSubmit)="register()">
     
     <table class="example-full-width" cellspacing="0">
@@ -35,4 +35,91 @@
 
     <button class="subBtn" type="submit">Submit</button>
   </form>
-</div>
+</div> -->
+
+
+<section
+  class="ezy__signup15 gray flex items-center justify-center py-14 md:py-24 bg-white dark:bg-[#0b1727] text-black text-opacity-90 dark:text-white"
+>
+  <div class="container px-4 mx-auto">
+    <div class="flex justify-center">
+      <div class="w-full md:w-2/3">
+        <div class="bg-white dark:bg-slate-800 shadow-xl p-6 lg:p-12">
+          <div class="flex flex-wrap justify-between items-center">
+            <div class="w-full lg:w-1/2 lg:order-2">
+              <div class="flex flex-col items-center justify-center h-full mt-12 lg:mt-0">
+                <img src="https://i.pinimg.com/564x/4b/3a/d5/4b3ad560950fced3b6b7f5b81fa4aeba.jpg" alt="" class="rounded-lg m-3" />
+                <div class="text-center mt-12">
+                  <a href="#!" class="underline hover:text-blue-600 duration-300">I am already a member</a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-6 lg:mt-0">
+              <div class="flex flex-col h-full p-2 lg:p-6 xl:p-12">
+                <h2 class="text-3xl md:text-[45px] font-bold mb-2">Sign Up</h2>
+                <form class="mt-6">
+                  <div class="w-full relative mb-6">
+                    <input
+                      type="text"
+                      class="bg-transparent border-b border-black dark:border-gray-200 focus:outline-none focus:border-blue-600 text-sm w-full py-2"
+                      id="uname"
+                      placeholder="Username"
+                      matInput [(ngModel)]="name" name="name" required
+                    />
+                    <i class="fas fa-user absolute top-1/2 -translate-y-1/2 right-2 opacity-80"></i>
+                  </div>
+                  <div class="w-full relative mb-6">
+                    <input
+                      type="email"
+                      class="bg-transparent border-b border-black dark:border-gray-200 focus:outline-none focus:border-blue-600 text-sm w-full py-2"
+                      id="email"
+                      placeholder="Email Address"
+                      matInput [(ngModel)]="email" name="email" required
+                    />
+                    <i class="fas fa-envelope absolute top-1/2 -translate-y-1/2 right-2 opacity-80"></i>
+                  </div>
+                  <div class="w-full relative mb-6">
+                    <input
+                      type="password"
+                      class="bg-transparent border-b border-black dark:border-gray-200 focus:outline-none focus:border-blue-600 text-sm w-full py-2"
+                      id="password"
+                      placeholder="Password"
+                       matInput  [(ngModel)]="password" name="password" required
+                    />
+                    <i class="fas fa-lock absolute top-1/2 -translate-y-1/2 right-2 opacity-80"></i>
+                  </div>
+                  <div class="w-full relative mb-6">
+                    <input
+                      type="password" 
+                      class="bg-transparent border-b border-black dark:border-gray-200 focus:outline-none focus:border-blue-600 text-sm w-full py-2"
+                      id="con-pass"
+                      placeholder="Confirm Password"
+                      matInput [(ngModel)]="confirmPassword" name="confirmPassword" required
+                    />
+                    <i class="fas fa-lock absolute top-1/2 -translate-y-1/2 right-2 opacity-80"></i>
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="remember-me" checked />
+                      <label class="form-check-label" for="remember-me"
+                        >I agree all statements in
+                        <a href="#" class="underline hover:text-blue-600">Terms & Conditions</a>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="bg-stone-700 py-2 px-6 rounded-lg text-xl text-white hover:bg-opacity-95 duration-300 mt-4"
+                  >
+                    Register <i class="fas fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
